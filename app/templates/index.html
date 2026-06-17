@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Prediction</title>
+</head>
+<body>
+
+<h2>Loan Prediction Form</h2>
+
+<form action="/predict" method="post">
+
+    <input name="Current_Loan_Amount" placeholder="Loan Amount"><br>
+    <input name="Credit_Score" placeholder="Credit Score"><br>
+    <input name="Annual_Income" placeholder="Annual Income"><br>
+    <input name="Monthly_Debt" placeholder="Monthly Debt"><br>
+    <input name="Years_of_Credit_History" placeholder="Credit History"><br>
+
+    <input name="Number_of_Open_Accounts" placeholder="Open Accounts"><br>
+    <input name="Number_of_Credit_Problems" placeholder="Credit Problems"><br>
+    <input name="Current_Credit_Balance" placeholder="Credit Balance"><br>
+    <input name="Maximum_Open_Credit" placeholder="Max Credit"><br>
+
+    <input name="Bankruptcies" placeholder="Bankruptcies"><br>
+    <input name="Tax_Liens" placeholder="Tax Liens"><br>
+
+    <input name="Term_Short_Term" placeholder="1 = Short Term, 0 = Long"><br>
+
+    <button type="submit">Predict</button>
+
+</form>
+
+</body>
+</html>
