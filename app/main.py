@@ -4,7 +4,15 @@ import joblib
 import os
 
 # Load model
-model = joblib.load(os.path.join("models", "D:\RAG2026\loan_project\models\loan_model(xgb).pkl"))
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+model_path = os.path.join(
+    BASE_DIR,
+    "models",
+    "loan_model(xgb).pkl"
+)
+
+model = joblib.load(model_path)
 
 st.title("🏦 Loan Default Prediction App")
 st.write("Enter borrower details below:")
